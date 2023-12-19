@@ -14,6 +14,7 @@ class InferenceGANOptions(BaseOptions):
 
         parser.add_argument("--img_in", help="image to transform", required=True)
         parser.add_argument("--img_out", help="transformed image", required=True)
+        parser.add_argument("--name", help="generated img name", default="img")
         parser.add_argument(
             "--img_width", type=int, help="image width, defaults to model crop size"
         )
