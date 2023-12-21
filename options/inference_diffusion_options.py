@@ -14,6 +14,7 @@ class InferenceDiffusionOptions(BaseOptions):
         )
 
         parser.add_argument("--img_in", help="image to transform", required=True)
+        parser.add_argument("--ref_in", help="reference image to transform", required=True)
         parser.add_argument(
             "--dir_out",
             help="The directory where to output result images",
